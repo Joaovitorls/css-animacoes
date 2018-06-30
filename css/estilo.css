@@ -1,0 +1,76 @@
+/* configurações de estilo */
+* { box-sizing: border-box; }
+html, body {
+    /*font-family: ;*/
+    color: #fff;
+    margin: 0;
+    overflow: hidden; /* sem scroll */
+}
+a.nav-item {
+    color: #fff; /* links da barra de navegação */
+}
+.fundo { /* imagem de de fundo */
+    position: relative;
+    background-image: url('../imgs/cover.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.opacidade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.divisao { /* divisão central da tela */
+    border-right: 4px solid #fff;
+}
+.infos { /*secao da direita que possui a contagem regressiva*/
+    margin: 15% auto;
+}
+
+
+/* configuracoes da contagem regressiva */
+.contagem-regressiva {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contagem-regressiva div {
+    line-height: 0.5em;
+    padding: 20px;
+    margin: 5px 15px;
+}
+.contagem-regressiva span {
+    font-size: 0.25em;
+}
+
+
+/* configurações da animação */
+.animacao-perspectiva {
+    perspective: 400px;
+}
+#logo-animado {
+    width: 150px;
+    height: 250px;
+}
+.animacao {
+    margin: 15% auto;
+    width: 150px;
+    height: 250px;
+    border: 2px solid #fff;
+
+    animation-name: spin;
+    animation-duration: 6000ms; /* tempo para dar uma volta completa */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
