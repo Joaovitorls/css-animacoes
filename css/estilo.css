@@ -4,10 +4,7 @@ html, body {
     /*font-family: ;*/
     color: #fff;
     margin: 0;
-    overflow: hidden; /* sem scroll */
-}
-a.nav-item {
-    color: #fff; /* links da barra de navegação */
+    overflow: hidden;
 }
 .fundo { /* imagem de de fundo */
     position: relative;
@@ -30,6 +27,9 @@ a.nav-item {
 }
 .infos { /*secao da direita que possui a contagem regressiva*/
     margin: 15% auto;
+}
+.alinha-btn {
+    margin: 5px 5px;
 }
 
 
@@ -73,4 +73,34 @@ a.nav-item {
 @keyframes spin {
     from { transform: rotateY(0deg); }
     to { transform: rotateY(360deg); }
+}
+
+@media(max-width: 768px){
+    html, body {
+        overflow: auto;
+    }
+    .divisao {
+        border: none;
+    }
+    .divisao h1, .divisao h3 {
+        display: none;
+    }
+    .fundo { /* imagem de de fundo */
+        position: relative;
+        background-image: none;
+        background-size: auto;
+        background-position: center;
+    }
+    .opacidade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+    .contagem-regressiva {
+        flex-direction: column;
+    }
 }
