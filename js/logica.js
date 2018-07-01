@@ -2,7 +2,7 @@
 const divContagemRegressiva = document.querySelector('.contagem-regressiva');
 
 //define a data de lançamento
-const lancamento = new Date('Jul 12, 2018 19:00:00').getTime();
+const lancamento = new Date('Jul 12, 2019 19:00:00').getTime();
 
 //calcula o tempo entre a data de lançamento e agora, a cada segundo
 const intervalo = setInterval(() => {

@@ -75,6 +75,7 @@ html, body {
     to { transform: rotateY(360deg); }
 }
 
+/* para telas de celular */
 @media(max-width: 768px){
     html, body {
         overflow: auto;
